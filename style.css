@@ -134,9 +134,10 @@ h2 {
 }
 
 h3 {
-  font-size: 17px;
+  font-size: 18px;
   font-weight:400;
   color:#222;
+  margin-bottom:20px;
 }
 
 h4 {
