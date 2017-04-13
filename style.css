@@ -219,7 +219,7 @@ img {
 
 .img_thumb{width:100px; height:100px; overflow:hidden; border-radius:50%;}
 .img_thumb img{width:100%;}
-
+.entry a{color:royalblue;}
 
 /* main list */
 .mp_list{display:flex; flex-wrap:wrap; justify-content:center;}
