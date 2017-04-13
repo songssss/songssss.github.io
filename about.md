@@ -6,12 +6,6 @@ permalink: /about/
 
 
 
-### Hello, I am
-
-songheeKim : UI/UX Designer & Front End Developer / Seoul, South Korea
-
----
-
 ### CODE X DESIGN
 
 This blog mainly writes about the code for interaction design.
