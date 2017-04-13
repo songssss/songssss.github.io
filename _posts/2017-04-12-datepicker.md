@@ -2,17 +2,16 @@
 layout: post
 title: datepicker
 tags:
-- swiper
+- datepicker
 ---
 
 
-Customized the **datepicker** design of the jquery-ui widget.
+Customized the datepicker design of the jquery-ui widget.
 
 Font : Spoqa han sans
 
+[github repository link](https://github.com/songssss/datepicker)
 
-
-![](../images/calender_img.png)
 
 ![](../images/calendar.gif)
 
