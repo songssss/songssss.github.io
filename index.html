@@ -2,17 +2,51 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
+<div class="posts mp_list">
+  {% for post in paginator.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+	<a href="{{ site.baseurl }}{{ post.url }}">
+      <h1>{{ post.title }}</h1>
       <div class="entry">
-        {{ post.excerpt }}
+        {{ post.excerpt }} 
       </div>
+		
+		{% include post-tags.html %} 
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <div class="date">
+         {{ post.date | date: "%B %e, %Y" }}
+      </div>
+	</a>
+
     </article>
   {% endfor %}
 </div>
+
+
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
+
