@@ -1,12 +1,10 @@
 ---
 layout: post
-title: swiper
+title: datepicker
 tags:
 - swiper
 ---
 
-
-# datepicker
 
 Customized the **datepicker** design of the jquery-ui widget.
 
