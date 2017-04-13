@@ -12,6 +12,26 @@ This blog mainly writes about the code for interaction design.
 
 ---
 
+### Main topics
+
+Framer.js
+
+Code for User Interaction
+
+Animation
+
+Css
+
+Jquery
+
+Javascript
+
+Scripts related to graphics
+
+Api & Library customizing
+
+---
+
 
 ### Contact me
 
