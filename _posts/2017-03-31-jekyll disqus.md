@@ -15,7 +15,7 @@ How to put comment disqus & add count on github jekyll blog / disqus comment cou
 지킬 블로그에 댓글 및 카운트 기능 추가하기
 
 
-[DISQUS](https://disqus.com/){:target="_blank"} 사이트 가입
+[DISQUS](https://disqus.com/) 사이트 가입
 
 ### add disqus / 댓글 기능 추가
 

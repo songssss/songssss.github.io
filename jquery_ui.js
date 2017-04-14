@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	console.log("hello");
 
-
+/*
 	showdown.extension('targetlink', function() {
 	  return [{
 		type: 'lang',
@@ -27,7 +27,7 @@ $(document).ready(function(){
 		}
 	  }];
 	});
-
+*/
 
 });
 
