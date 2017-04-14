@@ -1354,6 +1354,10 @@ a.cmt_count {
     position: absolute;
     bottom: 20px;
     right: 20px;
+	font-size:12px;
+	color:#aaa;
+	background:url('./images/ico_comment.png') 0 0 no-repeat;
+	padding-left:20px;
 }
 
 @media screen and (max-width: 640px) {
