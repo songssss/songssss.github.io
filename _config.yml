@@ -90,4 +90,4 @@ exclude:
 theme: jekyll-theme-cayman
 
 gems: [jekyll-paginate, jekyll-gist]
-paginate: 24
+paginate: 40
