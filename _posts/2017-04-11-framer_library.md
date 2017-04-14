@@ -7,7 +7,7 @@ tags:
 
 
 
-Framer code library / 자주 쓰이는 프레이머 코드들 정리하기
+Framer code library / 자주 쓰이는 프레이머 코드들 정리하기 🐶 
 
 
 ### Basic code sample
