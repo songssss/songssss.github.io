@@ -15,14 +15,14 @@ How to put comment disqus & add count on github jekyll blog / disqus comment cou
 지킬 블로그에 댓글 및 카운트 기능 추가하기
 
 
-DISQUS(https://disqus.com/) 사이트 가입 후
+[DISQUS](https://disqus.com/) 사이트 가입
 
 
 ### add disqus / 댓글 기능 추가
 
 #### post.html 
 
-```
+```html
 //상단 comments: true 추가
 ---
 layout: default
@@ -60,16 +60,16 @@ comments: true
 
 js 추가
 
-```
-<script id="dsq-count-scr" src="//cxd-1.disqus.com/count.js" async></script>
-
+```javascript
+<script id="dsq-count-scr" src="//shortname.disqus.com/count.js" async></script>
+// src 안의 shortname : 본인 name으로 변경
 ```
 
 #### index.html
 
 포스트 안에 뿌려질 카운트 태그 추가
 
-```
+```html
 <a class="cmt_count" href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{post.url}}"></a>
 ```
 
@@ -84,6 +84,6 @@ Comment count link text can be customized at your **Disqus Admin > Settings > Co
 
 
 
-[참고: perfectlyrandom.org](http://www.perfectlyrandom.org/2014/06/29/adding-disqus-to-your-jekyll-powered-github-pages/)
+[Reference: perfectlyrandom.org](http://www.perfectlyrandom.org/2014/06/29/adding-disqus-to-your-jekyll-powered-github-pages/)
 
-[참고: help.disqus.com](https://help.disqus.com/customer/portal/articles/565624-adding-comment-count-links-to-your-home-page)
+[Reference: help.disqus.com](https://help.disqus.com/customer/portal/articles/565624-adding-comment-count-links-to-your-home-page)
