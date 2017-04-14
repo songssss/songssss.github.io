@@ -22,20 +22,21 @@ How to put comment disqus & add count on github jekyll blog / disqus comment cou
 
 #### post.html 
 
-```javascript
+```html
 //상단 comments: true 추가
 ---
 layout: default
 comments: true
 ---
 
-//하단 comment 레이아웃 코드 추가
-//disqus_shortname 은 admin > settings > general > sites > edit settings 에서 확인 후 변경
+<!-- 하단 comment 레이아웃 코드 추가 -->
 
  <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'shortname 확인후 변경'; // required: replace example with your forum shortname
+        var disqus_shortname = 'shortname 확인후 변경'; 
+	// required: replace example with your forum shortname
+	//disqus_shortname 은 admin > settings > general > sites > edit settings 에서 확인 후 변경
         // var disqus_developer = 1; // Comment out when the site is live
         var disqus_identifier = "{{ page.url }}";
 
@@ -60,9 +61,9 @@ comments: true
 
 js 추가
 
-```javascript
+```html
 <script id="dsq-count-scr" src="//shortname.disqus.com/count.js" async></script>
-// src 안의 shortname : 본인 name으로 변경
+<!-- src 안의 shortname : 본인 name으로 변경 -->
 ```
 
 #### index.html
