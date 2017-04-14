@@ -22,7 +22,7 @@ How to put comment disqus & add count on github jekyll blog / disqus comment cou
 
 #### post.html 
 
-```html
+```javascript
 //상단 comments: true 추가
 ---
 layout: default
