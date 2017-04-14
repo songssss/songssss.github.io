@@ -1350,7 +1350,11 @@ display:none;
 }
 
 .con_box{margin:20px 0;}
-
+a.cmt_count {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
 
 @media screen and (max-width: 640px) {
 	.container{padding:0 10px;}
