@@ -24,3 +24,13 @@ y
 
 firebase list
 
+
+*** firebase init
+
+mkdir folder
+
+cd folder
+
+firebase init
+
+
