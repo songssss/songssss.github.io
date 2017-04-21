@@ -12,3 +12,10 @@ npm install firebase-tools -g
 permission denied (admin)
 -> sudo npm install firebase-tools -g
 
+
+*** CLI success
+
+firebase login
+
+y
+
