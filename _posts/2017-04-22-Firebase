@@ -35,3 +35,26 @@ firebase init
 
 ![](../images/170422_1.jpg)
 
+
+---
+
+database select
+
+project select
+
+ruleset
+
+기본이름으로
+
+database.rule.json
+
+
+
+*** hosting step
+
+public directory Y
+
+index.html redirect Y
+
+
+
