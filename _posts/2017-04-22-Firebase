@@ -1,0 +1,14 @@
+---
+layout: post
+title: firebase start
+tags:
+- firebase
+---
+
+*** FIREBASE Install / 파이어베이스설치 
+
+npm install firebase-tools -g
+
+permission denied (admin)
+-> sudo npm install firebase-tools -g
+
