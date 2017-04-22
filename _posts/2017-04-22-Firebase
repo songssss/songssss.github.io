@@ -74,18 +74,20 @@ script
 	  firebase.initializeApp(config);
 	  auth = firebase.auth();
 	  var authProvider = new firebase.auth.GoogleAuthProvider();
-	  auth.signInWithPopup(authProvider);    
-	  //인증허용시
+	  
 	  auth.onAuthStateChanged(function(user){
 		if (user){
 			//인증 성공부
 			console.log("sucess");
 			console.log(user);
+			//메모리스트 출력
+
 		} else {
 			//인증 실패부
-
+			auth.signInWithPopup(authProvider);
 		}
 	  });
+
 ```
 
 
