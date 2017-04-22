@@ -57,4 +57,10 @@ public directory Y
 index.html redirect Y
 
 
+---
+
+firebase serve
+
+localhost:5000
+
 
