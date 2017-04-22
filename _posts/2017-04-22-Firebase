@@ -75,6 +75,17 @@ script
 	  auth = firebase.auth();
 	  var authProvider = new firebase.auth.GoogleAuthProvider();
 	  auth.signInWithPopup(authProvider);    
+	  //인증허용시
+	  auth.onAuthStateChanged(function(user){
+		if (user){
+			//인증 성공부
+			console.log("sucess");
+			console.log(user);
+		} else {
+			//인증 실패부
+
+		}
+	  });
 ```
 
 
