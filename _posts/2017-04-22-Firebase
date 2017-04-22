@@ -63,4 +63,18 @@ firebase serve
 
 localhost:5000
 
+---
+
+script
+
+```javascript
+		var auth;
+	  // Initialize Firebase
+    
+	  firebase.initializeApp(config);
+	  auth = firebase.auth();
+	  var authProvider = new firebase.auth.GoogleAuthProvider();
+	  auth.signInWithPopup(authProvider);    
+```
+
 
