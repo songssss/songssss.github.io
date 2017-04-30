@@ -1376,6 +1376,10 @@ a.cmt_count {
 	padding-left:16px;
 }
 
+.alC{text-align:center;}
+.alL{text-align:left;}
+.alR{text-align:right;}
+
 @media screen and (max-width: 640px) {
 	.container{padding:0 10px;}
 	.wrapper-masthead{margin-bottom:15px;}
