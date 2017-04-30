@@ -117,7 +117,7 @@ hr{
 h1 {
   color:royalblue;
     font-weight:600;
-	font-size:22px;
+	font-size:27px;
 	margin-bottom:20px;
 }
 h1 a {
@@ -130,13 +130,29 @@ h1 a:hover {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 26px;
+  letter-spacing:-2px;
+  color:#222;
+  margin-bottom:20px;
+  position:relative;
+  padding-left:10px;
+
 }
 
+h2:before{
+    content: '';
+    width: 5px;
+    height: 25px;
+    background: royalblue;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    top: 12px;
+}
 h3 {
-  font-size: 18px;
-  font-weight:400;
-  color:#222;
+  font-size: 20px;
+  font-weight:600;
+  color:#333;
   margin-bottom:20px;
 }
 
