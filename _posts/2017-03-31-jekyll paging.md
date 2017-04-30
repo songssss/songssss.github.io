@@ -22,7 +22,7 @@ paginate: 24  <!-- Number of posts per page / custom  -->
 
 ### _index.html
 
-[https://jekyllrb.com/docs/pagination/](https://jekyllrb.com/docs/pagination/)
+[https://jekyllrb.com/docs/pagination/](https://jekyllrb.com/docs/pagination/){:target="_blank"}
 
 - add : <!-- Pagination links --> paginator code 추가
 

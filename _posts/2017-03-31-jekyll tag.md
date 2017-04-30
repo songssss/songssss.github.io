@@ -117,4 +117,4 @@ published: true
 This is a post for an example.
 ```
 
-[참고: github jekyll 태그 적용](http://blog.meinside.pe.kr/Adding-tag-cloud-and-archives-page-to-Jekyll/)
+[참고: github jekyll 태그 적용](http://blog.meinside.pe.kr/Adding-tag-cloud-and-archives-page-to-Jekyll/){:target="_blank"}

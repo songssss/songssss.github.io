@@ -15,7 +15,7 @@ How to put comment disqus & add count on github jekyll blog / disqus comment cou
 지킬 블로그에 댓글 및 카운트 기능 추가하기
 
 
-[DISQUS](https://disqus.com/) 사이트 가입
+[DISQUS](https://disqus.com/){:target="_blank"} 사이트 가입
 
 ### add disqus / 댓글 기능 추가
 
@@ -84,6 +84,6 @@ Comment count link text can be customized at your **Disqus Admin > Settings > Co
 
 
 
-[Reference: perfectlyrandom.org](http://www.perfectlyrandom.org/2014/06/29/adding-disqus-to-your-jekyll-powered-github-pages/)
+[Reference: perfectlyrandom.org](http://www.perfectlyrandom.org/2014/06/29/adding-disqus-to-your-jekyll-powered-github-pages/){:target="_blank"}
 
-[Reference: help.disqus.com](https://help.disqus.com/customer/portal/articles/565624-adding-comment-count-links-to-your-home-page)
+[Reference: help.disqus.com](https://help.disqus.com/customer/portal/articles/565624-adding-comment-count-links-to-your-home-page){:target="_blank"}

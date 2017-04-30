@@ -12,7 +12,7 @@ Customized the datepicker design of the jquery-ui widget.
 Font : Spoqa han sans
 
 
-[github repository link](https://github.com/songssss/datepicker)
+[github repository link](https://github.com/songssss/datepicker){:target="_blank"}
 
 
 ![](../images/calendar.gif)
