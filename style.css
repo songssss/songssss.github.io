@@ -1380,6 +1380,7 @@ a.cmt_count {
 .alL{text-align:left;}
 .alR{text-align:right;}
 .youtube{}
+/*
 .youtube a {
     border: 1px solid #ccc;
     display: inline-block;
@@ -1389,7 +1390,9 @@ a.cmt_count {
 
 .youtube a img {
     margin-top: -47px;
-}
+}*/
+
+.youtube iframe{border:1px solid #ccc;}
 
 
 @media screen and (max-width: 640px) {
