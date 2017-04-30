@@ -1379,6 +1379,18 @@ a.cmt_count {
 .alC{text-align:center;}
 .alL{text-align:left;}
 .alR{text-align:right;}
+.youtube{}
+.youtube a {
+    border: 1px solid #ccc;
+    display: inline-block;
+    height: 270px;
+    overflow: hidden;
+}
+
+.youtube a img {
+    margin-top: -47px;
+}
+
 
 @media screen and (max-width: 640px) {
 	.container{padding:0 10px;}
