@@ -244,6 +244,7 @@ img {
 .mp_list{display:flex; flex-wrap:wrap; justify-content:center;}
 .mp_list a h1 {
     font-size: 17px;
+	color:royalblue;
     height: 28px;
     overflow: hidden;
     text-overflow: ellipsis;
