@@ -1384,7 +1384,11 @@ a.cmt_count {
 .alC{text-align:center;}
 .alL{text-align:left;}
 .alR{text-align:right;}
-.youtube{}
+
+/* sub CSS */
+#sub .youtube{
+margin:30px 0;
+}
 /*
 .youtube a {
     border: 1px solid #ccc;
@@ -1397,7 +1401,7 @@ a.cmt_count {
     margin-top: -47px;
 }*/
 
-.youtube iframe{border:1px solid #ccc;}
+#sub .youtube iframe{border:1px solid #ccc;}
 #sub p.sub_txt {
     font-size: 16px;
     color: #888;
