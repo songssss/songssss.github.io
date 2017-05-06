@@ -8,12 +8,15 @@ layout: main
 
 	<a href="{{ site.baseurl }}{{ post.url }}">
       <h1>{{ post.title }}</h1>
+	 </a>
 
 	<a class="cmt_count" href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{post.url}}"></a>
 
+	<a href="{{ site.baseurl }}{{ post.url }}">
       <div class="entry">
         {{ post.excerpt }} 
       </div>
+	</a>
 		
 		{% include post-tags.html %} 
 
