@@ -3,6 +3,7 @@ layout: post
 title: Draging area
 tags:
 - framer
+published: false
 ---
 
 

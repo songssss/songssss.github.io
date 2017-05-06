@@ -4,7 +4,7 @@ title: jekyll paginator
 tags:
 - jekyll
 - blog
-published: true
+published: false
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title: framer_tripic
 tags:
 - framer
+published: false
 ---
 
 
