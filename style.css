@@ -1385,6 +1385,11 @@ a.cmt_count {
 .alL{text-align:left;}
 .alR{text-align:right;}
 
+.visit_tag{position:relative;}
+.visit_tag span{position:absolute; background:#fff; display:inline-block; width:100%; height:20px;}
+.visit_tag .block1{top:0; left:0;}
+.visit_tag .block1{bottom:0; left:0;}
+
 /* sub CSS */
 #sub .youtube{
 margin:30px 0;
