@@ -145,7 +145,7 @@ h2 {
 
 h2:before{
     content: '';
-    width: 5px;
+    width: 3px;
     height: 21px;
     background: royalblue;
     position: absolute;
@@ -1398,6 +1398,12 @@ a.cmt_count {
 }*/
 
 .youtube iframe{border:1px solid #ccc;}
+p.sub_txt {
+    font-size: 16px;
+    color: #888;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
 
 
 @media screen and (max-width: 640px) {
