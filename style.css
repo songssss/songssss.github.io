@@ -396,7 +396,7 @@ nav {
 }
 nav a {
   margin-left: 20px;
-  color: rgba(255,255,255,.8);
+  color: rgba(255,255,255,.7);
   text-align: right;
   font-weight: 300;
   letter-spacing: 1px;
@@ -406,7 +406,7 @@ nav a {
 
 
 nav a:hover{
-color:royalblue;
+color:#fff;
 }
 
 
