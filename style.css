@@ -1398,7 +1398,7 @@ a.cmt_count {
 }*/
 
 .youtube iframe{border:1px solid #ccc;}
-p.sub_txt {
+#sub p.sub_txt {
     font-size: 16px;
     color: #888;
     font-weight: bold;
