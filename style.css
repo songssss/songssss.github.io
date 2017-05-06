@@ -1385,10 +1385,37 @@ a.cmt_count {
 .alL{text-align:left;}
 .alR{text-align:right;}
 
-.visit_tag{position:relative;}
-.visit_tag span{position:absolute; background:#fff; display:inline-block; width:100%; height:20px;}
-.visit_tag .block1{top:0; left:0;}
-.visit_tag .block1{bottom:0; left:0;}
+.visit_tag{
+    padding: 10px;
+    position: relative;
+    width: 232px;
+    margin: 12px 0 0 12px;
+    height: 73px;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #eee;
+    border-left: 1px solid #eee;
+    box-shadow: 2px 2px 3px rgba(0,0,0,.05);
+	background:#fff;
+}
+.img_wrap {
+    /* border: 1px solid red; */
+    overflow: hidden;
+    height: 43px;
+}
+.visit_tag img{
+    margin-top: -18px;
+    margin-left: -2px;
+}
+.visit_tag .box1{
+    position: absolute;
+    background: #fff;
+    display: inline-block;
+    width: 75px;
+    height: 100%;
+    right: 0;
+}
 
 /* sub CSS */
 #sub .youtube{
