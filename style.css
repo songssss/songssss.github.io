@@ -108,7 +108,8 @@ body{
 }
 hr{
 	margin:40px 0 30px;
-	border:1px solid #ddd;
+	border:none;
+	border-bottom:1px solid #d8d8d8;
 
 }
 
