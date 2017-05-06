@@ -115,10 +115,10 @@ hr{
 
 
 h1 {
-  color:royalblue;
+  color:#333;
     font-weight:600;
-	font-size:27px;
-	margin-bottom:20px;
+	font-size:32px;
+	margin:20px 0;
 }
 h1 a {
   color: #454545;
@@ -130,7 +130,7 @@ h1 a:hover {
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 24px;
   letter-spacing:-2px;
   color:#222;
   margin-bottom:20px;
@@ -142,17 +142,17 @@ h2 {
 h2:before{
     content: '';
     width: 5px;
-    height: 25px;
+    height: 21px;
     background: royalblue;
     position: absolute;
     left: 0;
     display: inline-block;
-    top: 12px;
+    top: 11px;
 }
 h3 {
-  font-size: 20px;
+  font-size: 19px;
   font-weight:600;
-  color:#333;
+  color:#454545;
   margin-bottom:20px;
 }
 
@@ -248,7 +248,7 @@ img {
     text-overflow: ellipsis;
     white-space: nowrap;
 	font-weight:400;
-	margin-bottom:0;
+	margin:0;
 }
 
 .mp_list a:hover h1{
