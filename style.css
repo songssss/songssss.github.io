@@ -351,7 +351,7 @@ left:20px;
   float:left;
 }
 
-.site-name a{font-weight:400;}
+.site-name a{font-weight:400; color:rgba(255,255,255,.5);}
 
 .site-name a:hover{
 text-decoration:none;
@@ -363,7 +363,7 @@ text-decoration:none;
 
 .site-description {
   padding-left:10px;
-  color: #bbb;
+  color: rgba(255,255,255,.4);
   font-size: 14px;
   float:left;
 }
@@ -396,7 +396,7 @@ nav {
 }
 nav a {
   margin-left: 20px;
-  color: #454545;
+  color: rgba(255,255,255,.8);
   text-align: right;
   font-weight: 300;
   letter-spacing: 1px;
@@ -1224,7 +1224,7 @@ p > code{
 /* layout custom */
 header{
 	position:fixed;
-	background:#fff;
+	background:royalblue;
 	width:100%;
 	top:0;
 	left:0;
