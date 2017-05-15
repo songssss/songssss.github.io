@@ -13,6 +13,21 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+
+  <!-- TODO add manifest here -->
+  <link rel="manifest" href="manifest.json">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+  <meta name="theme-color" content="#3f51b5">
+
+
+
   </head>
 
   <body style="background:#fafafa;">
@@ -71,6 +86,9 @@
   ga('send', 'pageview');
 
 </script>
+
+  <script src="scripts/app.js" async></script>
+
 
   </body>
 </html>
