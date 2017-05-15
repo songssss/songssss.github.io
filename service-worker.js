@@ -3,19 +3,7 @@ var cacheName = 'pwa-final-1';
 var filesToCache = [
   './',
   './index.html',
-  './scripts/app.js',
-  './styles/inline.css',
-  './images/clear.png',
-  './images/cloudy-scattered-showers.png',
-  './images/cloudy.png',
-  './images/fog.png',
-  './images/partly-cloudy.png',
-  './images/rain.png',
-  './images/scattered-showers.png',
-  './images/sleet.png',
-  './images/snow.png',
-  './images/thunderstorm.png',
-  './images/wind.png'
+  './scripts/app.js'
 ];
 
 //install
