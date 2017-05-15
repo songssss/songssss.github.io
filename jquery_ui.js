@@ -2,6 +2,12 @@ $(document).ready(function(){
 
 
 	console.log("hello");
+	//모바일 화면 흔들림 방지
+ $(this).bind('touchmove',function(){
+   return false;
+ });
+
+
 
 /*
 	showdown.extension('targetlink', function() {
