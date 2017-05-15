@@ -81,7 +81,7 @@ case3.하나의 기능부터 시작, 일부 개선
 ---
 
 
-### refrerence
+### Reference
 
 Udacity, PWA.rocks, google code laps
 
@@ -113,7 +113,7 @@ HTML, JS, Cache
 
 ---
 
-### reference
+### Reference
 
 ampproject.org
 
