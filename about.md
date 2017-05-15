@@ -12,7 +12,7 @@ This blog mainly writes about the code for interaction design and UI/UX
 
 ---
 
-### Posting topics
+### Posting Topics
 
 UI/UX (Interface & Experience)
 
