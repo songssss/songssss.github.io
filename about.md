@@ -8,13 +8,15 @@ permalink: /about/
 
 ### CODE X DESIGN
 
-This blog mainly writes about the code for interaction design.
+This blog mainly writes about the code for interaction design and UI/UX
 
 ---
 
 ### Posting topics
 
-Code for User Interaction
+UI/UX (Interface & Experience)
+
+Interaction
 
 Framer.js
 
