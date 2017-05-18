@@ -171,12 +171,12 @@ h4 {
 h4:before {
     content: '';
     width: 3px;
-    height: 12px;
+    height: 14px;
     background: royalblue;
     position: absolute;
     display: inline-block;
     left: 0;
-    top: 11px;
+    top: 9px;
 }
 
 p {
