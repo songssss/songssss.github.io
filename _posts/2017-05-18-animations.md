@@ -5,7 +5,6 @@ tags:
 - animation
 - css
 - tweenmax
-published: true
 ---
 
 
