@@ -17,7 +17,7 @@ css와 자바스크립트 애니메이션
 
 ---
 
-### css animation
+### CSS animation
 
 UI요소 상태 전환같은 원샷 전환에 사용 / 상태제어는 자바스크립트를 사용
 
@@ -39,9 +39,9 @@ web animations API or framework
 
 ---
 
-### css / class toggle
+### CSS / toggleClass
 
-토글클래스 
+토글 클래스 
 
 ```javascript
 $('.btn').on('click', function(){
@@ -75,7 +75,7 @@ transition:all .5s ease-out;
 
 ---
 
-### css Keyframes
+### CSS Keyframes
 
 개별 애니메이션 키프레임, 기간 및 반복을 세밀하게 제어
 
@@ -90,7 +90,7 @@ ex2) 여러 속성을 동시에 변경
 animation-name 속성을 사용하여 필요한 애니메이션을 선택
 
 
-#### Browser support
+#### Browser Support
 
 IE10 +
 
@@ -132,7 +132,7 @@ IE10 +
 
 ---
 
-### easing
+### Easing
 
 자연스러운 모션은 앱 사용자에게 편안한 느낌을 주고 전반적인 사용 환경을 개선
 
@@ -186,7 +186,7 @@ transition:all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
 
 ---
 
-### javascript library TweenMax / TweenLite
+### Javascript library TweenMax / TweenLite
 
 자바스크립트 애니메이션 라이브러리 트윈맥스, 트윈라이트
 
