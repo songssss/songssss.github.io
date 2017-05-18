@@ -199,17 +199,17 @@ ex)탄성 바운스
 
 #### 장점
 
-- 작은 자바스크립트 라이브러리로 풍성한 코드 베이스 제공
+작은 자바스크립트 라이브러리로 풍성한 코드 베이스 제공
 
-- 뛰어난 퍼포먼스
+뛰어난 퍼포먼스
 
-- 초경량으로 유지하기를 원할 경우 TweenLite
+초경량으로 유지하기를 원할 경우 TweenLite
 
--scale, rotate, skew 쉽게 구현
+scale, rotate, skew 쉽게 구현
 
-- 다양한 easing 제공
+다양한 easing 제공
 
-- 애니메이션 제어 
+애니메이션 제어 
 
 ```javascript
 function animate1(){
