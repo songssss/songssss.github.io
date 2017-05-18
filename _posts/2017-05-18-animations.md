@@ -62,11 +62,9 @@ transform-origin:bottom right;
 
 /* matrix */
 .box.move{
-/* transform:rotate(60deg) translate(100px, 0) scale(1.2); */
-/*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
 transform:matrix(1.5, 0.5, 0, 1.5, 60, 0);
 }
-
+/*matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())*/
 
 /* transition */
 .ease01{
