@@ -24,7 +24,7 @@ UI요소 상태 전환같은 원샷 전환에 사용 / 상태제어는 자바스
 
 ---
 
-### javascript animation
+### Javascript animation
 
 web animations API or framework
 
