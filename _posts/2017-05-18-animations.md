@@ -502,7 +502,7 @@ transform:rotateY(-180deg); /* set */
 [Reference msdn library](https://msdn.microsoft.com/ko-kr/library/hh673529(v=vs.85).aspx){:target="_blank"}
 
 
-<div class="frame_box2" style="height:800px;">
+<div class="frame_box2" style="height:800px; tansform:scale(0.8);">
 	<iframe id="ifr" src="https://songssss.github.io/project/interact/170519_animation/" frameborder="0" width="100%" height="100%" ></iframe>
 </div>
 
