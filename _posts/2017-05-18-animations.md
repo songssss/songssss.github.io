@@ -338,8 +338,167 @@ window.onload = function(){
 ---
 
 
+### 3D CSS  
+
+3D 관련 CSS속성
+
+#### perspective
+
+관찰자의 시점(perspective)을 정함으로서 3D공간을 구성하고, 2D 엘리먼트(element)가 그 공간안에서 어떻게 동작할지 설정
+
+엘리먼트가 사용자로부터 멀어질수록 작아진다.
+
+작은 값을 지정할수록 원근감이 깊어진다.
+
+[Reference : Mozilla web docs](https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms){:target="_blank"}
+
+
+```css
+.item_wrap{
+	width:300px;
+	perspective:500px;
+	margin-left:20px;
+}
+
+.item_wrap.org1{
+	perspective-origin: 0 0; /* top left */
+}
+```
+
+---
+
+#### transform-origin
+
+요소의 변형 원점 위치 지정
+
+default는 50% 50% center
+
+```css
+.item_wrap.org1{
+	perspective-origin: 0 0; /* top left */
+}
+.item_wrap.org2{
+	perspective-origin: 50% 0; /* top center */
+}
+.item_wrap.org3{
+	perspective-origin: 100% 0; /* top right */
+}
+```
+
+---
+
+
+#### transform-style:preserve-3d
+
+중첩 요소를 3D 공간에 렌더링하는 방법을 정의
+
+perspective 속성은 직계 자식에만 적용 preserve-3d를 통해 관점유지
+
+transform-style 속성은 요소가 2D에서 동작할 것인지 또는 3D에서 동작할 것인지 명시
+
+기본값은 flat, 속성에 preserve-3d값을 적용하면 전환되는 요소의 자식요소가 부모와 동일한 관점과 3D 구현 상황에서 동작
+
+html
+
+```html
+
+<section>
+	<a class="btn addAnim" href="#none">addClass</a>
+	<div class="item_wrap">
+		<div class="pre_wrap">
+			<div class="item pers3">preserve-3d</div>
+		</div>
+	</div>
+	<div class="code">
+		Perspective / transform-style : preserve-3d
+	</div>
+</section>
+```
+
+css
+
+```css
+.item_wrap{
+	width:300px;
+	perspective:500px;
+	margin-left:20px;
+}
+.pre_wrap{
+transform-style:preserve-3d;
+transform:rotateY(30deg);
+}
+
+.pers3{
+width:100px;
+height:100px;
+transition:all .5s cubic-bezier(0.23, 1, 0.32, 1);
+transform-origin:50% 0%; /* top center */
+}
+
+.move .pers3{
+transform:rotateX(65deg);
+}
+
+```
+
+---
+
+#### backface-visibility
+
+사용자를 마주 볼 때 변형된 요소의 뒷면(반대쪽)을 표시할지 여부
+
+변형되지 않은 요소의 경우 요소의 앞면이 사용자를 향하도록 표시
+
+html
+
+```html
+<section>
+	<div class="card_wrap">
+		<div class="card">
+			<div class="back">back</div>
+			<div class="front">front</div>
+		</div>
+	</div>
+	<div class="code">
+		Perspective / backface
+	</div>
+</section>
+```
+
+css
+
+```css
+.card_wrap{
+width:80px;
+height:80px;
+perspective:400px;
+margin-bottom:30px;
+}
+.card_wrap .card{
+transition: 2s;
+transform-style:preserve-3d;
+
+}
+
+.card_wrap:hover .card{
+transform:rotateY(-180deg);
+}
+
+.card_wrap .card > div{position:absolute; width:80px; height:80px; 
+backface-visibility:hidden;
+color:#fff;
+}
+
+.card_wrap .card .back{
+background:skyblue; 
+}
+
+.card_wrap .card .front{
+background:royalblue;
+transform:rotateY(-180deg); /* set */
+}
+```
 
 
 
-
-
+[Reference msdn library](https://msdn.microsoft.com/ko-kr/library/hh673529(v=vs.85).aspx){:target="_blank"}
