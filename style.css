@@ -1261,7 +1261,7 @@ header .header_in{
 
 .cont_box{margin-top:90px;}
 
-.frame_box{width:100%; height:45vw; border:1px solid #ccc;}
+.frame_box{width:100%; height:45vw; border:1px solid #ccc; display:inline-block;}
 
 /* pagination */
 .pagination{
