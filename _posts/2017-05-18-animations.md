@@ -503,5 +503,68 @@ transform:rotateY(-180deg); /* set */
 
 
 <div class="frame_box" style="height:800px;">
-	<iframe src="https://songssss.github.io/project/interact/170519_animation/" frameborder="0" width="100%" height="100%" ></iframe>
+	<iframe id="ifr" src="https://songssss.github.io/project/interact/170519_animation/" frameborder="0" width="100%" height="100%" ></iframe>
 </div>
+
+
+<script>
+ function resize_frame(id) {
+
+ var frm = document.getElementById("ifr");
+
+ function resize() {
+
+ var ms_ie = false;
+
+  var ua = window.navigator.userAgent;
+
+  var old_ie = ua.indexOf('MSIE ');
+
+  var new_ie = ua.indexOf('Trident/');
+
+ 
+
+  if ((old_ie > -1) || (new_ie > -1)) {
+
+   ms_ie = true;
+
+  }
+
+ 
+
+  if ( ms_ie ) {
+
+   //IE specific code goes here
+
+  var iframeHeight=frm.contentWindow.document.body.scrollHeight;
+
+  frm.height=iframeHeight+20;
+
+  }else{
+
+  frm.style.height = "auto"; // set default height for Opera
+
+  contentHeight = frm.contentWindow.document.documentElement.scrollHeight;
+
+  frm.style.height = contentHeight + 23 + "px"; // 23px for IE7
+
+  }
+
+ }
+
+ if (frm.addEventListener) {
+
+ frm.addEventListener('load', resize, false);
+
+ } else {
+
+ frm.attachEvent('onload', resize);
+
+ }
+
+}
+
+resize_frame('ifr'); 
+</script>
+
+
