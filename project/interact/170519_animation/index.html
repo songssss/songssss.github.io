@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Animation</title>
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="../../css/reset.css">
+		<link href="//cdn.jsdelivr.net/nanumsquare/1.0/nanumsquare.css"  rel="stylesheet" type="text/css">
+
+		<script src="../../js/jquery-1.11.1.min.js"></script>
+		
+  </head>
+
+  <body>
+	<div class="wrap">
+		<a class="btn_back" href="javascript:window.history.back()">Go Back</a>
+
+		<section>
+			<a class="btn addAnim" href="#none">addClass</a>
+			<div class="item basic">toggle</div>
+			<div class="code">
+				css toggleClass
+			</div>
+		</section>
+
+		<section>
+			<a class="btn addAnim" href="#none">addClass</a>
+			<div class="item ease01">ease-out</div>
+			<div class="code">
+				css ease-out / fast start 빠른시작, 마지막에 자연스러운 감속 효과, 일반적 인터페이스
+			</div>
+		</section>
+
+		<section>
+			<a class="btn addAnim" href="#none">addClass</a>
+			<div class="item ease02">ease-in</div>
+			<div class="code">
+				css ease-in / 느리게 시작, 빠르게 끝, 무거운돌이 떨어지는 것처럼 느리게시작 낮은 쿵, 시작 굼뜨게 움직이는 듯한 효과로 인해 반응 인지에 부정적 영향을 미칠 수 있음
+			</div>
+		</section>
+
+		<section>
+			<a class="btn addAnim" href="#none">addClass</a>
+			<div class="item ease03">ease-in-out</div>
+			<div class="code">
+				css ease-in-out / 느린시작, 빠른중간, 느린종료, 차량의 가속감속과 유사, 적절히 사용시 easing out만 사용하는 것 보다 드라마틱한 효과 제공, 애니메이션 대비가 증가하여 사용자에게 만족감 줄 수 있음
+			</div>
+		</section>
+
+
+		<section>
+			<a class="btn addAnim" href="#none">addClass</a>
+			<div class="item ease04">cubic-bezier</div>
+			<div class="code">
+				css cubic bezier / 3차원 베지어 곡선, 첫번째 제어점이 른쪽 하단영역에 있으면 느리게시작, 왼쪽상단 빠르게시작 / 두번째 제어점이 오른쪽 하단 빠르게 끝, 왼쪽상단 느리게 끝<br />
+				<iframe src="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/animations/curve-playground.html" style="width:350px; height:450px;" frameborder="0"></iframe>
+				<a href="https://googlesamples.github.io/web-fundamentals/fundamentals/design-and-ui/animations/curve-playground.html" target="_blank"><strong>애니메이션 곡션 도구</strong></a>
+			</div>
+		</section>
+
+		<section>
+			<a class="btn addAnim" href="#none">addClass</a>
+			<div class="item ease05">Quintic ease-out</div>
+			<div class="code">
+				css Quintic ease-out / 빠른 ease-out 효과
+			</div>
+		</section>
+
+		<section>
+			<div class="item keyfr01">keyframe</div>
+			<div class="code">
+				css keyframe
+			</div>
+		</section>
+
+
+
+		<section>
+			<a class="btn" href="javascript:animate1();">start</a>
+			<div class="item item01">Item01</div>
+			<div class="code">
+				TweenMax.from( $( ".item01" ), 5, { opacity: 0 } );
+			</div>
+		</section>
+
+		<section>
+			<a class="btn" href="javascript:animate2();">start</a>
+			<div class="item item02">Item02</div>
+			<div class="code">
+				TweenMax.from( $( ".item02" ), 1, { rotation: 180 } );
+			</div>
+		</section>
+
+		<section>
+			<a class="btn" href="javascript:animate3();">start</a>
+			<div class="item item03">Item03</div>
+			<div class="code">
+				TweenMax.to(".item03", 1, { 
+					scale: function(){
+					return Math.random()*0.5;
+				}
+			</div>
+		</section>
+
+		<section>
+			<a class="btn" href="javascript:animate4();">start</a>
+			<div class="item item04">Item04</div>
+			<div class="code">
+				TweenMax.fromTo(".item04",1,{x:10, delay:1}, {x:100});
+			</div>
+		</section>
+
+		<section>
+			<a class="btn" href="javascript:animate5();">start</a>
+			<div class="item item05">Item05</div>
+			<div class="code">
+				move = TweenMax.to(".item05", 1 , {x:100, rotation:180, scale:1.5});
+				//after 1 second into the 3-second animations, lets try to reverse them
+				TweenLite.delayedCall(1, reverse)
+
+				function reverse(){
+					move.reverse();
+				}
+			</div>
+		</section>
+
+		<section>
+			<a class="btn" href="javascript:animate6();">start</a>
+			<div class="item" id="item06">0</div>
+			<div class="code">
+				var box2 = document.getElementById("item06"),
+					count = 0,
+					tween2;
+
+				tween2 = TweenMax.to(box2, 2, {x:100, repeat:10, yoyo:true, onRepeat:onRepeat, repeatDelay:0.5, ease:Linear.easeNone});
+
+				function onRepeat() {
+				  count++;
+				  box2.innerHTML = count;
+				  TweenLite.set(box2, {backgroundColor:"hsl(" + Math.random() * 255 + ", 90%, 60%)"});
+				}
+			</div>
+		</section>
+
+		<section>
+			<a class="btn" href="javascript:animate7();">start</a>
+			<div class="item item07">repeat</div>
+			<div class="code">
+				TweenMax.to(".item07",1,{x:50, yoyo:true, repeat:-1});
+			</div>
+		</section>
+
+		<section>
+			<a class="btn" href="javascript:animate8();">start</a>
+			<div class="item item08">Item08</div>
+			<div class="code">
+				var box8 = $('.item08');
+				var t1 = new TimelineLite();
+				t1.to(box8, 1, {x:30});
+				t1.to(box8, 1, {y:30});
+				t1.to(box8, 1, {x:0, y:0, backgroundColor:'#aaa'});
+			</div>
+		</section>
+
+		<section>
+			<a class="btn" href="javascript:animate9();">start</a>
+			<div class="item item09">
+				<div class="item09_1"></div>
+				<div class="item09_2"></div>
+				<div class="item09_3"></div>
+			</div>
+			<div class="code">
+				var box1 = $('.item09_1');
+				var box2 = $('.item09_2');
+				var box3 = $('.item09_3');
+
+				var t1 = new TimelineLite();
+				t1.staggerTo([box1,box2,box3], 1, {rotation:180},0.5);
+			</div>
+		</section>
+
+
+		<section>
+			<div class="item item10">
+				<div class="item10_1"></div>
+				<div class="item10_2"></div>
+				<div class="item10_3"></div>
+			</div>
+			<div class="code">
+				var box1 = $('.item10_1');
+				var box2 = $('.item10_2');
+				var box3 = $('.item10_3');
+
+				var t1 = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:0.5});
+				t1.staggerTo([box1,box2,box3], 1, {rotation:180, backgroundColor:'#222'},0.5);
+			</div>
+		</section>
+
+
+
+		<section>
+			<a class="btn" href="javascript:animate11();">start</a>
+			<div class="item item11">
+			</div>
+			<div class="code">
+				ease:Back.easeOut
+			</div>
+		</section>
+
+		<section>
+			<a class="btn" href="javascript:animate12();">start</a>
+			<div class="item item12">
+				<div class="item12_1">1</div>
+				<div class="item12_2">2</div>
+				<div class="item12_3">3</div>
+			</div>
+			<div class="code">
+				var objects = [obj1, obj2, obj3, obj4, obj5];
+				TweenMax.staggerFrom(objects, 1, {y:"+=150"}, 0.2);
+			</div>
+		</section>
+
+		<section class="item13_wrap">
+			<div id="item13">A</div>
+			<div class="code">
+			</div>
+		</section>
+
+
+
+		<!-- perspective -->
+		<section>
+			<a class="btn addAnim" href="#none">addClass</a>
+			<div class="item_wrap">
+				<div class="item pers1">Perspective</div>
+			</div>
+			<div class="code">
+				Perspective rotateX
+			</div>
+		</section>
+
+		<section>
+			<a class="btn addAnim" href="#none">addClass</a>
+			<div class="item_wrap org1">
+				<div class="item pers1">origin top left</div>
+			</div>
+			<div class="code">
+				Perspective / perspective-origin: 0 0; / top left /
+			</div>
+		</section>
+
+
+		<section>
+			<a class="btn addAnim" href="#none">addClass</a>
+			<div class="item_wrap org2">
+				<div class="item pers1">origin top center</div>
+			</div>
+			<div class="code">
+				Perspective / perspective-origin: 50% 0; / top center /
+			</div>
+		</section>
+
+		<section>
+			<a class="btn addAnim" href="#none">addClass</a>
+			<div class="item_wrap org3">
+				<div class="item pers1">origin top right</div>
+			</div>
+			<div class="code">
+				Perspective / perspective-origin: 50% 0; / top right /
+			</div>
+		</section>
+
+
+		<section>
+			<a class="btn addAnim" href="#none">addClass</a>
+			<div class="item_wrap">
+				<div class="item pers2">translateZ</div>
+			</div>
+			<div class="code">
+				Perspective translateZ
+			</div>
+		</section>
+
+
+		<!--
+			transform-style:preserv-3d / 관점유지
+			perspective 속성은 직계 자식에만 적용
+			transform-style 속성은 요소가 2D에서 동작할 것인지 또는 3D에서 동작할 것인지 명시
+			기본값은 flat, 속성에 preserve-3d값을 적용하면 전환되는 요소의 자식요소가 부모와 동일한 관점과 3D 구현 상황에서 동작
+		-->
+		
+		<section>
+			<a class="btn addAnim" href="#none">addClass</a>
+			<div class="item_wrap">
+				<div class="pre_wrap">
+					<div class="item pers3">preserve-3d</div>
+				</div>
+			</div>
+			<div class="code">
+				Perspective / transform-style : preserve-3d
+			</div>
+		</section>
+
+
+		<!-- backface-visibility -->
+		<section>
+			<div class="card_wrap">
+				<div class="card">
+					<div class="back">back</div>
+					<div class="front">front</div>
+				</div>
+			</div>
+			<div class="code">
+				Perspective / backface
+			</div>
+		</section>
+
+
+
+
+	</div>
+
+
+		
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/index.js"></script>
+
+		<script>
+			function animate1(){
+				TweenMax.from($('.item01'), 5, {opacity:0});
+			}
+
+			function animate2(){
+				TweenMax.from( $( ".item02" ), 1, { rotation: 180, x:100, ease:Elastic.easeOut } );
+			}
+
+
+			function animate3(){
+				TweenMax.to(".item03", 1, { 
+					scale: function(){
+						return Math.random()*1.2;
+					},
+					rotation: function(){
+						return Math.random()*360;
+					}
+				});
+			}
+
+			function animate4(){
+				TweenMax.fromTo(".item04",1,{x:10, delay:1}, {x:50, y:30});
+			}
+
+			function animate5(){
+				move = TweenMax.to(".item05", 1 , {x:100, rotation:180, scale:1.5});
+				//after 1 second into the 3-second animations
+				TweenMax.delayedCall(1, reverse)
+
+				function reverse(){
+					move.reverse();
+				}
+			}
+
+			function animate6(){
+				// item06 : repeat:-1
+				var box = document.getElementById("item06"),
+					count = 0,
+					tween;
+
+				tween = TweenMax.to(box, 2, {x:100, repeat:10, yoyo:true, onRepeat:onRepeat, repeatDelay:0.5, ease:Linear.easeNone});
+
+				function onRepeat() {
+				  count++;
+				  box.innerHTML = count;
+				  TweenLite.set(box, {backgroundColor:"hsl(" + Math.random() * 255 + ", 90%, 60%)"});
+				}
+			}
+
+
+			function animate7(){
+				// item07 : repeat:-1
+				TweenMax.to(".item07",1,{x:50, yoyo:true, repeat:-1});
+			}
+
+			function animate8(){
+				// item08 : play
+				var box8 = $('.item08');
+				tween = new TimelineLite();
+				tween.to(box8, 1, {x:30});
+				tween.to(box8, 1, {y:30});
+				tween.to(box8, 1, {x:0, y:0, backgroundColor:'#aaa'});
+			}
+
+			function animate9(){
+				// item09 : same animation play
+				var box1 = $('.item09_1');
+				var box2 = $('.item09_2');
+				var box3 = $('.item09_3');
+
+				tween = new TimelineLite();
+				tween.staggerTo([box1,box2,box3], 1, {rotation:180},0.5);
+			}
+
+			function animate10(){
+				// item10 : same animation play yoyo // TimelineMax
+				var box1 = $('.item10_1');
+				var box2 = $('.item10_2');
+				var box3 = $('.item10_3');
+
+				tween10 = new TimelineMax({repeat:-1, yoyo:true, repeatDelay:0.5});
+				tween10.staggerTo([box1,box2,box3], 1, {rotation:180, borderRadius:'50%', backgroundColor:'#4169e1'},0.5);
+			}animate10();
+
+			
+			function animate11(){
+				var box1 = $('.item11');
+
+				TweenMax.from(box1,1,{scale:2, opacity:0, rotation:360, ease:Back.easeOut});
+			} 
+
+					
+			function animate12(){
+				var obj1 = $('.item12_1');
+				var obj2 = $('.item12_2');
+				var obj3 = $('.item12_3');
+
+				var objects = [obj1,obj2,obj3];
+
+
+				TweenMax.staggerFrom(objects,5,{scale:2, opacity:0, rotation:360, ease:Elastic.easeOut}, .4);
+			} 
+
+
+			//item13
+			window.onload = function(){
+
+				var box = document.getElementById("item13");
+				var x = 0;
+				var fn = setInterval(function(){
+					var value = x*0.1;
+					var left = 50 + Math.floor(Math.sin(value)*40);
+					var top = 50 + Math.floor(Math.cos(value)*20);
+					var width = 50 + Math.floor(Math.cos(value)*30);
+					var height = 50 + Math.floor(Math.cos(value)*30);
+					box.style.left = left + "px";
+					box.style.top = top + "px";
+					box.style.width = width + "px";
+					x++;
+				}, 30);
+
+			}
+		</script>
+
+	<!-- Webapp Transition hotfix --> 
+	<script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+		
+
+
+  </body>
+</html>
