@@ -350,6 +350,9 @@ window.onload = function(){
 
 작은 값을 지정할수록 원근감이 깊어진다.
 
+부모 요소에 지정
+
+
 [Reference : Mozilla web docs](https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms){:target="_blank"}
 
 
@@ -358,10 +361,6 @@ window.onload = function(){
 	width:300px;
 	perspective:500px;
 	margin-left:20px;
-}
-
-.item_wrap.org1{
-	perspective-origin: 0 0; /* top left */
 }
 ```
 
@@ -401,7 +400,6 @@ transform-style 속성은 요소가 2D에서 동작할 것인지 또는 3D에서
 html
 
 ```html
-
 <section>
 	<a class="btn addAnim" href="#none">addClass</a>
 	<div class="item_wrap">
@@ -438,7 +436,6 @@ transform-origin:50% 0%; /* top center */
 .move .pers3{
 transform:rotateX(65deg);
 }
-
 ```
 
 ---
