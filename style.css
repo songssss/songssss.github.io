@@ -256,7 +256,12 @@ img {
 
 .img_thumb{width:100px; height:100px; overflow:hidden; border-radius:50%;}
 .img_thumb img{width:100%;}
-.entry > p > a{color:royalblue;}
+
+.entry > p > a{
+color:royalblue;
+padding-right:25px;
+background:url('./images/ico_blank.jpg') right center no-repeat;
+}
 
 /* main list */
 .mp_list{display:flex; flex-wrap:wrap; justify-content:center;}
