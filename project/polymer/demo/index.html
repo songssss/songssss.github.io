@@ -6,7 +6,7 @@
 
     <title>polymer-element demo</title>
 
-    <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+   <script src="../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
 
     <link rel="import" href="../bower_components/iron-demo-helpers/demo-pages-shared-styles.html">
     <link rel="import" href="../bower_components/iron-demo-helpers/demo-snippet.html">
@@ -36,12 +36,7 @@
 		paper-icon-button + [main-title] {
 		  margin-left: 24px;
 		}
-		paper-progress {
-		  display: block;
-		  width: 100%;
-		  --paper-progress-active-color: rgba(255, 255, 255, 0.5);
-		  --paper-progress-container-color: transparent;
-		}
+
 		app-header {
 		  @apply --layout-fixed-top;
 		  color: #fff;
@@ -50,43 +45,48 @@
 		  };
 		}
 		app-drawer {
-		  --app-drawer-scrim-background: rgba(0, 0, 100, 0.8);
+		  --app-drawer-scrim-background: rgba(0, 0, 0, 0.5);
 		  --app-drawer-content-container: {
-			background-color: #B0BEC5;
+			background-color: #fff;
+			z-index:9;
 		  }
 		}
 		sample-content {
 		  padding-top: 64px;
 		}
+		.mn{cursor:pointer;}
+		.content{padding:30px;}
+		.drawer_cont{padding:20px;}
 	  </style>
 	</custom-style>
 
   </head>
   <body>
 
-  <app-header reveals>
-  <app-toolbar>
-    <paper-icon-button icon="menu" onclick="drawer.toggle()"></paper-icon-button>
-	<a onclick="drawer.toggle()"># &nbsp;&nbsp;</a>
-    <div main-title>My app</div>
-    <paper-icon-button icon="delete"></paper-icon-button>
-    <paper-icon-button icon="search"></paper-icon-button>
-    <paper-icon-button icon="close"></paper-icon-button>
-    <paper-progress value="10" indeterminate bottom-item></paper-progress>
-  </app-toolbar>
-</app-header>
-<app-drawer id="drawer" swipe-open></app-drawer>
-<sample-content size="10"></sample-content>
+	<app-header reveals>
+	<app-toolbar>
+	<paper-icon-button icon="menu" onclick="drawer.toggle()"></paper-icon-button>
+	<div class="mn" onclick="drawer.toggle()">## &nbsp;&nbsp;</div>
+	<div main-title>My app</div>
+	<paper-icon-button icon="delete"></paper-icon-button>
+	<paper-icon-button icon="search"></paper-icon-button>
+	<paper-icon-button icon="close"></paper-icon-button>
+	  </app-toolbar>
+	</app-header>
+
+	<app-drawer id="drawer" swipe-open>
+		<div class="drawer_cont">
+			menu content
+		</div>
+	</app-drawer>
 
 
 
     <div class="vertical-section-container centered">
       <h3>Basic polymer-element demo</h3>
-      <demo-snippet>
-        <template>
-          <polymer-element></polymer-element>
-        </template>
-      </demo-snippet>
+      <div class="content">
+		text area
+	  </div>
     </div>
   </body>
 </html>
