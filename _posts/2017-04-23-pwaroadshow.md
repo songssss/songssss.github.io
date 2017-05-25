@@ -235,25 +235,6 @@ UX 올바른 사용자 경험 제공
 
 ---
 
-#### Reliable
-
-사용자에게 공룡을 보여주지 말자
-
----
-
-#### Fast
-
-53%의 사용자는 3초 이상 페이지가 안뜨면 나가버린다.
-
----
-
-#### Engaging
-
-홈스크린,몰입,알림
-
-
----
-
 #### Manifest & Service Worker
 
 PWA를 구성하는 표준기술
@@ -287,11 +268,6 @@ case3.하나의 기능부터 시작, 일부 개선
 ---
 
 
-#### Reference
-
-Udacity, PWA.rocks, google code laps
-
-
 #### Manifest
 
 shotname, icons, display, themecolor, orientation, start URL, splash screen etc...
@@ -319,7 +295,15 @@ HTML, JS, Cache
 
 ---
 
-#### Reference
+
+#### Shadow Dom
+
+1 amp / many doc
+
+
+---
+
+#### PWA site
 
 ampproject.org
 
@@ -329,9 +313,10 @@ goo.gl/zS42rs
 
 ---
 
-#### Shadow Dom
 
-1 amp / many doc
+#### Reference  
+
+Udacity, PWA.rocks, google code laps
 
 
 
