@@ -106,6 +106,9 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
 	-webkit-font-smoothing: antialiased;
 }
 
+.hide {display:block; height: 0; width: 0; font-size: 0; line-height: 0; margin: 0; padding: 0; overflow:hidden;}
+
+
 body{
 	
 }
@@ -1372,11 +1375,11 @@ padding-left:10px;
   margin-top:20px;
 }
 .post-tags a {
-    background: #eee;
+    background: #f2f2f2;
     padding: 3px 5px;
     border-radius: 3px;
     font-size: 11px;
-    color: #888;
+    color: #454545;
 }
 
 .mp_list .post-tags{
