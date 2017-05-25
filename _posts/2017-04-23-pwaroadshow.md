@@ -92,7 +92,7 @@ layout과 paint 가 필요 없는 속성을 변경 하면 브라우저가 합성
 
 컴포지터가 단독으로 처리할 수 있는 변경 속성을 고수
 
-** transform, opacity
+**transform, opacity**
 
 
 [페이지 성능 컴포지터 전용 속성](https://developers.google.com/web/fundamentals/performance/rendering/stick-to-compositor-only-properties-and-manage-layer-count){:target="_blank"}
