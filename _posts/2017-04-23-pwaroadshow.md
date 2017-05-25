@@ -7,12 +7,13 @@ tags:
 published: true
 ---
 
+프로그레시브 웹앱으로 웹에서 놀라운 사용자 경험을 제공하는 새로운 방법
 
-PWA (Progressive Web App) / 프로그레시브 웹앱
+PWA (Progressive Web App) 
 
 A new way to deliver amazing experiences on the web.
 
-웹에서 놀라운 사용자 경험을 제공하는 새로운 방법
+
 
 ---
 
