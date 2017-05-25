@@ -8,7 +8,7 @@ published: true
 ---
 
 
-PWA (Progressive Web App)
+PWA (Progressive Web App) / 프로그레시브 웹앱
 
 A new way to deliver amazing experiences on the web.
 
@@ -20,6 +20,8 @@ A new way to deliver amazing experiences on the web.
 
 
 #### Reliable 신뢰
+
+Load instantly and never show the downasaur, even in uncertain network conditions.
 
 네트워크 상태가 불확실한 경우에도 즉시로드하여 공룡을 표시하지 않음
 
