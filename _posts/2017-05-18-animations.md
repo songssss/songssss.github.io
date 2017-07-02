@@ -38,6 +38,8 @@ web animations API or framework
 
 ---
 
+## CSS Animation
+
 ### CSS / toggleClass
 
 토글 클래스 
@@ -185,6 +187,8 @@ transition:all .5s cubic-bezier(0.465, 0.183, 0.153, 0.946);
 2. 두번째 제어점 : 오른쪽 하단영역에 있으면 빠르게 끝, 왼쪽상단에 있으면 느리게 끝
 
 ---
+
+## Javascript Animation
 
 ### Javascript library TweenMax / TweenLite
 
