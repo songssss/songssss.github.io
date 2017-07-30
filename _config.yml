@@ -11,7 +11,7 @@ title : CXD
 description: Code x Design
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: 
+avatar:
 
 #
 # Flags below are optional
@@ -27,8 +27,9 @@ footer-links:
   instagram: songssss
   linkedin:
   pinterest: kimsongheee
-  rss: 
-  twitter: 
+  codepen: songs
+  rss:
+  twitter:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
