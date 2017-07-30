@@ -274,7 +274,7 @@ background:url('./images/ico_blank.png') right center no-repeat;
 }
 
 .mp_list a:hover h1{
-	
+
 }
 .mp_list .entry > p{
 	margin:5px 0 15px;
@@ -310,7 +310,7 @@ background:url('./images/ico_blank.png') right center no-repeat;
 
 .mp_list .entry p {
     line-height: 1.3em;
-	height: 3.9em; 
+	height: 3.9em;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 3;
@@ -399,7 +399,7 @@ text-decoration:none;
   }
   .site-description {
   font-size: 13px;
-	
+
   }
 }
 
@@ -445,7 +445,7 @@ color:#fff;
     font-size:13px;
   }
   .site-description {
-  display:none;	
+  display:none;
   }
 }
 
@@ -503,11 +503,11 @@ code span{
 }
 p > code{
   font-family: 'Bitstream Vera Sans Mono','Courier', monospace;
-  margin: auto 3px; padding: 0 0.4em; 
-  font-size: 0.9em; 
-  border-radius: 3px; 
-  color: #343a40; 
-  line-height: 1.3em; 
+  margin: auto 3px; padding: 0 0.4em;
+  font-size: 0.9em;
+  border-radius: 3px;
+  color: #343a40;
+  line-height: 1.3em;
   display: inline-block; background-color: #f1f3f5;
 }
 
@@ -1196,6 +1196,13 @@ p > code{
   color: #2AA198;
 }
 
+.codepen{
+    width:40px;
+    height:40px;
+    display:inline-block;
+    background-image:url(/images/ico_codepen.png);
+    background-size: 100%;
+}
 /* Literal.Number.Integer.Long */
 .svg-icon {
   width: 40px;
@@ -1350,7 +1357,7 @@ padding-left:10px;
 }
 .archive-item h4 a:hover {
 	color:royalblue;
-  
+
 }
 
 .archive-item h4 a:before{
