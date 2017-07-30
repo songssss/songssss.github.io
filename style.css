@@ -1203,7 +1203,7 @@ p > code{
   display: inline-block;
 }
 
-.codepen{
+.svg-icon.codepen{
     background-image:url('./images/ico_codepen.png');
     background-size: 100%;
 }
