@@ -32,7 +32,7 @@ Api & Library Customizing
 
 #### Recently studying 
 
-GSAP
+GSAP 
 
 Javascript Framework
 
