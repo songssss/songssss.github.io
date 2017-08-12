@@ -170,7 +170,7 @@ h4:before {
     content: '';
     width: 3px;
     height: 14px;
-    background: royalblue;
+    background: #ccc;
     position: absolute;
     display: inline-block;
     left: 0;
