@@ -22,7 +22,7 @@ Interaction
 
 Javascript
 
-Scripts related to graphics
+Code related to graphics
 
 Api & Library Customizing
 
