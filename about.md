@@ -8,34 +8,39 @@ permalink: /about/
 
 ### CODE X DESIGN
 
-This blog mainly writes about the code for interaction design and UI/UX
+This blog posts about front-end development code related to user interaction.
 
 ---
 
 ### Posting Topics
 
-UI/UX (Interface & Experience)
-
-Interaction
+Front-End-Development
 
 Framer.js
 
-Animation
-
-Css
-
-Jquery
+Interaction
 
 Javascript
 
 Scripts related to graphics
 
-Api & Library customizing
-
-Front-End
+Api & Library Customizing
 
 
 ---
+
+
+#### Recently studying 
+
+GSAP
+
+Javascript Framework
+
+Vue.js
+
+ES6, Bulid Tools, npm, webpack, babel...
+
+
 
 
 ### Contact me
